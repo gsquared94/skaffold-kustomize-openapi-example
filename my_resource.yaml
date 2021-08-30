@@ -1,0 +1,16 @@
+apiVersion: example.com/v1alpha1
+kind: MyResource
+metadata:
+  name: service
+spec:
+  template:
+    spec:
+      containers:
+      - name: server
+        image: server
+        command: example
+        ports:
+        - name: grpc
+          protocol: TCP
+          containerPort: 8080
+

@@ -1,0 +1,7 @@
+apiVersion: skaffold/v2beta19
+kind: Config
+metadata:
+  name: my-resource-definition
+deploy:
+  kubeContext: my-k8s-context
+  kustomize: {}
